@@ -147,7 +147,7 @@ html {
 
 .main__to-do__item.fadingItem,
 .main__done__item.fadingItem {
-    transition: all .2s;
+    transition: all 1.2s;
     left: 20px;
     opacity: .2;
 }

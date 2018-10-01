@@ -37,8 +37,12 @@ window.addEventListener("keydown", e => {
         listItem.removeChild(controlOk)
     })
     controlRemove.addEventListener("click", () => {
-        listItem.classList.add("fadingItem");
-        setTimeout(() => listItem.remove(), 1000)
+        listItem.style.textDecoration = "line-through";
+        controlRemove.addEventListener("click", () => {
+            listItem.classList.add("fadingItem");
+            setTimeout(() => listItem.remove(), 1000)
+
+        })
 
     })
 })
